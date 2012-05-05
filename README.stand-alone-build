@@ -1,0 +1,14 @@
+To build, do:
+
+make -C /lib/modules/<kernel_version>/build/ M=`pwd`
+
+To use, copy over, and run "depmod -a"
+
+This is only tested for around kernel 3.0.
+
+The "patches" directory contains all the patches applied.
+
+The "patches-not-used" directory contains one patch which is
+not applied, but to undo some stylistic changes from Naohiro
+so that patch #2 with that patch gives the same git --numstat .
+
